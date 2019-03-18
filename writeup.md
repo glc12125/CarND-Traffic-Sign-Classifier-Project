@@ -188,8 +188,8 @@ To train the model, I used AdamOptimizer, a batch size of 100, at most 50 epochs
 
 ##### My final model results were:
 * training set accuracy of 100%
-* validation set accuracy of 96.1%
-* test set accuracy of 94.9%
+* validation set accuracy of 96.4%
+* test set accuracy of 94.6%
 
 ##### Here is the precision and recalls for each traffic sign type:
 
@@ -224,16 +224,16 @@ Here are the results of the prediction:
 |:---------------------:|:---------------------------------------------:|
 | Priority      		| Priority   									|
 | Stop Sign     		| Stop Sign 									|
-| Pedestrian			| Roundabout mandatory	     					|
+| Pedestrian			| Speed limit (80km/h)	     					|
 | Yield					| Yield											|
-| Ice	      			| Ice					 						|
+| Ice	      			| Slippery Road					 						|
 
 
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%.
+The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 60%.
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
-The code for making predictions on my final model is located in the 122th and 123th cells of the Ipython notebook.
+The code for making predictions on my final model is located in the 55th and 56th cells of the Ipython notebook.
 
 The following is the list of how the model is confident about its prediction for each new testing image:
 
