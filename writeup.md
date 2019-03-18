@@ -236,4 +236,8 @@ The following is the list of how the model is confident about its prediction for
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 #### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
 
+Here is the feature maps of first two convolution layers:
 
+![features](./writeup_images/features.png)
+
+As I can see from above, the first layer, captures the overal edges of the speed limit 80 traffic sign. FeatureMap0 and FeatureMap1 capture the figure 80 quite clearly, while FeatureMap2 focuses on the outer round shape of the sign. The second convolutional layer looks at the features at more detailed level. FeatureMap2 sees vertical lines while FeatureMap4 only cares about horizontal lines.
