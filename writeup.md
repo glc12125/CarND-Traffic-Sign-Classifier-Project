@@ -158,6 +158,10 @@ I only augmented images for those traffic signs that are fewer than 1000 trainin
 
 My final model consisted of the following layers ([Network architecture adapted from the published model for GTSRB](http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf)):
 
+Here is the network architecture from the paper:
+
+![network_architecture](./writeup_images/network_architecture.png)
+
 | ID | Layer         		|     Description	        					|
 |:---------:|:---------------------:|:---------------------------------------------:|
 | 0 | Input         		| 32x32x1 Gray scaled image   							|
@@ -202,11 +206,13 @@ To train the model, I used AdamOptimizer, a batch size of 100, at most 50 epochs
 
 Here are five German traffic signs that I found on the web:
 
-![augmented](./new_signs/ice_id_30.jpg)
-![augmented](./new_signs/pedestrian_id_27.jpg)
-![augmented](./new_signs/roundabout_id_40.jpg)
+![augmented](./new_signs/priority_id_12.jpg)
 ![augmented](./new_signs/stop_sign_id_14.jpg)
+![augmented](./new_signs/pedestrian_id_27.jpg)
 ![augmented](./new_signs/yield_sign_id_13.jpg)
+![augmented](./new_signs/ice_id_30.jpg)
+
+
 
 Apart from the roundabout traffic sign, all the other signs have challenging effects: the pedestrian one has a colored background, the ice one literally is covered by ice, both the stop sign and the yield sign are translated in some degrees.
 
@@ -216,11 +222,11 @@ Here are the results of the prediction:
 
 | Image			        |     Prediction	        					|
 |:---------------------:|:---------------------------------------------:|
-| Roundabout      		| Roundabout   									|
+| Priority      		| Priority   									|
 | Stop Sign     		| Stop Sign 									|
+| Pedestrian			| Roundabout mandatory	     					|
 | Yield					| Yield											|
 | Ice	      			| Ice					 						|
-| Pedestrian			| Speed limit (20km/h)      								|
 
 
 The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%.
